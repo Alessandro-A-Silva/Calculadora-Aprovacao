@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculadora de nota</title>
+    <title>Calculadora de aprovação</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -13,6 +13,7 @@
         rel="stylesheet" />
     <script src="js/script.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="icon" type="image/x-icon" href="assets/images/calculator-fill.png">
 </head>
 <main>
     <section>
@@ -41,15 +42,15 @@
                 <div class="lb">
                     <label for="first-grade">Primeira nota (N1)</label>
                 </div>
-                <input type="number" name="first-grade" id="first-grade" min="0">
+                <input type="number" name="first-grade" id="first-grade" min="0" step="0.1">
                 <div class="lb">
                     <label for="second-grade">Segunda nota (N2)</label>
                 </div>
-                <input type="number" name="" id="second-grade" min="0">
+                <input type="number" name="second-grade" id="second-grade" min="0" step="0.1">
                 <div class="lb">
                     <label for="third-grade">Terceira nota (N3)</label>
                 </div>
-                <input type="number" name="" id="third-grade" min="0">
+                <input type="number" name="" id="third-grade" min="0" step="0.1">
                 <button type="button" id="calculate">Calcular</button>
             </form>
             <p id="result">

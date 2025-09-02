@@ -164,13 +164,19 @@ i{
 
 @media(max-height: 667px){
     #description{
-        padding-top: 4rem;
+        padding-top: 22vh;
         width: 100vw;
     }
     #contact{
-        padding-bottom: 2rem;
+        padding-bottom: 1rem;
     }
-} 
+}
+
+@media(height: 740px){
+    #description{
+        padding-top: 14vh;
+    }
+}
 
 
 

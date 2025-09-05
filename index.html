@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculadora de aprovação</title>
+    <title>Calculadora de nota</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -14,15 +14,17 @@
     <script src="js/script.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
     <link rel="icon" type="image/x-icon" href="assets/images/calculator-fill.png">
+
 </head>
 <main>
     <section>
         <div id="description">
             <h2>*Descrição</h2>
             <p id="explanation">
-                Média = (N1 + N2 + N3) / 3;
+                Ex: Média = (N1 + N2 + N3) / 3;
                 <br>
                 Aprovado: Média >= 7;
+
                 <br>
                 Reprovado: Média < 2,5; <br>
                     Média final necessária = 15 - (Média * 2);<br>
@@ -38,19 +40,36 @@
                 <img src="assets/images/logo.png" alt="logo if" id="logo">
                 <h1>Calculadora de aprovação</h1>
             </div>
-            <form>
+            <div id="options">
+                <h2>Quantidade de unidades</h2>
+                <form>
+                    <label>
+                        <input type="radio" name="option" class="option" value="2" checked="checked">
+                        2 - Unidades
+                    </label>
+                    <label>
+                        <input type="radio" name="option" class="option" value="3">
+                        3 - Unidades
+                    </label>
+                    <label>
+                        <input type="radio" name="option" class="option" value="4">
+                        4 - Unidades
+                    </label>
+                </form>
+            </div>
+            <form id="grades">
                 <div class="lb">
-                    <label for="first-grade">Primeira nota (N1)</label>
+                    <label for="first-grade">1ª nota (N1)</label>
                 </div>
-                <input type="number" name="first-grade" id="first-grade" min="0" step="0.1">
+                <input type="number" name="first-grade" class="grade" min="0">
                 <div class="lb">
-                    <label for="second-grade">Segunda nota (N2)</label>
+                    <label for="second-grade">2ª nota (N2)</label>
                 </div>
-                <input type="number" name="second-grade" id="second-grade" min="0" step="0.1">
-                <div class="lb">
+                <input type="number" name="" class="grade" min="0">
+                <!-- <div class="lb">
                     <label for="third-grade">Terceira nota (N3)</label>
                 </div>
-                <input type="number" name="" id="third-grade" min="0" step="0.1">
+                <input type="number" name="" id="third-grade" min="0"> -->
                 <button type="button" id="calculate">Calcular</button>
             </form>
             <p id="result">
